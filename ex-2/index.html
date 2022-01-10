@@ -12,7 +12,18 @@
 </head>
 <body>
   <div id="app">
-    
+    <!-- <h2>Numero Giocatore</h2>
+    <p>{{ numPlayer }}</p>
+    <h2>Numero PC</h2>
+    <p> {{ numPC }}</p>
+
+    <h1>Risposta</h1>
+    <p>{{ (numPlayer < numPC) ? 'PC' : 'Player' }}</p> -->
+    <button @click="getSentence">Genera Frase</button>
+    <button @click="sentence = null">Cancella</button>
+    <p v-if="sentence">
+        {{ sentence }}
+    </p>
   </div>
   <script src="js/script.js"></script>
 </body>
